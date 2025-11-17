@@ -1,4 +1,4 @@
-/* استایل کلی صفحه */
+/* استایل کلی صفحه‌ها */
 body {
     font-family: sans-serif;
     direction: rtl;
@@ -23,7 +23,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* استایل لیست محصولات */
+/* لیست محصولات */
 ul {
     list-style: none; /* حذف نقطه‌ها */
     padding: 0;
