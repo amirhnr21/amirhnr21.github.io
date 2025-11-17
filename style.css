@@ -1,22 +1,46 @@
-/* استایل کلی صفحه‌ها */
-body {
-    font-family: sans-serif;
-    direction: rtl;
-    text-align: center;
-    margin-top: 100px;
+/* فونت فارسی */
+@font-face {
+    font-family: 'Vazir';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font/dist/Vazir-Regular.woff2') format('woff2');
 }
 
-/* عنوان صفحات */
-h1 {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Vazir', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 60px;
     color: #333;
-    font-size: 32px;
+}
+
+/* بخش اصلی */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 85%;
+    max-width: 450px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* عنوان‌ها */
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 /* لینک‌ها */
 a {
-    font-size: 20px;
-    color: purple;
+    color: #7d3cff;
     text-decoration: none;
+    font-size: 16px;
 }
 
 a:hover {
@@ -25,13 +49,41 @@ a:hover {
 
 /* لیست محصولات */
 ul {
-    list-style: none; /* حذف نقطه‌ها */
     padding: 0;
-    margin-top: 20px;
+    margin: 0;
+    list-style: none;
 }
 
-li {
+ul li {
+    background: #fafafa;
+    padding: 14px;
     margin: 10px 0;
-    font-size: 22px;
-    color: #444;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* دکمه برگشت */
+.back-btn {
+    margin-top: 25px;
+    display: inline-block;
+    background: #7d3cff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.back-btn:hover {
+    background: #5c2ccc;
+}
+
+/* دکمه صفحه اصلی */
+.btn-main {
+    margin-top: 20px;
+    display: inline-block;
+    background: #7d3cff;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-size: 18px;
 }
