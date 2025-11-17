@@ -1,3 +1,4 @@
+/* استایل کلی صفحه */
 body {
     font-family: sans-serif;
     direction: rtl;
@@ -5,12 +6,32 @@ body {
     margin-top: 100px;
 }
 
+/* عنوان صفحات */
 h1 {
     color: #333;
     font-size: 32px;
 }
 
+/* لینک‌ها */
 a {
     font-size: 20px;
     color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* استایل لیست محصولات */
+ul {
+    list-style: none; /* حذف نقطه‌ها */
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #444;
 }
